@@ -63,5 +63,7 @@ public class Main {
         driver.get("http://tutorialsninja.com/demo/index.php?route=product/product&product_id=33"); // Get to this site
         var addToCartBotm2 = driver.findElement(By.id("button-cart"));
         addToCartBotm2.click(); // find the element by id & click
+        var shoppingCartBotm = driver.findElement(By.xpath("//*[@id=\"cart\"]/button"));
+        shoppingCartBotm.click();
     }
 }
